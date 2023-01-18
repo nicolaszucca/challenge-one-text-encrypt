@@ -1,0 +1,29 @@
+function encrypt(text = String){
+    let miText = text.toLowerCase();
+    let res = '';
+    
+    for(let letter of miText){
+        
+         if(!code[letter]){
+              res += letter;   
+         }else{
+              res += code[letter];
+         }
+    }   
+    return res;
+}
+
+
+function decrypt(text = String) {
+    let miText = text.toLowerCase().split("");
+    let res = '';
+
+    miText.forEach((letter, i) => {
+        if (code[letter]) {
+            miText.splice(i, code[letter].length - 1);
+        }
+        res += letter;
+    })
+
+    return res;
+}

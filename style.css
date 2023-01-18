@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+}
+
+.header img {
+    margin-left: 84px;
+    margin-top: 40px;
+}
+
+.inputDataContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 250px 0px 250px;
+}
+
+.inputDataContainer input {
+    text-decoration: none;
+    border: none;
+
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #0A3871;
+}
+
+.inputDataContainer textarea::placeholder {
+    color: #0A3871
+}
+
+.inputDataContainer textarea:focus {
+    outline: none;
+}
+
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    height: 90vh;
+    left: 1200px;
+    top: 40px;
+
+    /* shadow */
+    /* box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2); */
+    border-radius: 32px;
+}
+
+.rectangle .noMessages {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+    margin-bottom: 15px;
+
+    color: #343A40;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.rectangle .message2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+
+    color: #495057;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+
+.textareaInput {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 5px 4px 2px rgba(0, 0, 0, 0.2);
+
+    width: 800px;
+    height: 500px;
+
+    resize: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #0A3871;
+    padding: 0px;
+}
+
+
+
+.textareaOutput {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 5px 4px 2px rgba(0, 0, 0, 0.2);
+
+    margin-top: 50px;
+    width: 90%;
+    height: 700px;
+
+    resize: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #0A3871;
+    padding: 5px 0px 0px 0px;
+}
+
+.textareaOutput:focus {
+    outline: none;
+}
+
+.textareaInput:focus {
+    outline: none;
+}
+
+.copyBtn {
+    position: absolute;
+    right: 21px;
+    bottom: 9px;
+    padding: 3px;
+    border: #495057 1px solid;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    background-color: #0A3871;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.copyBtn:hover {
+    transform: scale(1.2);
+}
+
+/*
+ section buttons 
+ */
+
+.btnsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 290px;
+    top: 700px;
+}
+
+#encryptBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 0px 0px 125px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    font-size: larger;
+    font-weight: 500;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    transition: all ease 1s;
+    order: 0;
+    flex-grow: 0;
+}
+
+#decryptBtn {
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 0px 0px 110px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    font-size: larger;
+    font-weight: 500;
+
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+
+    flex: none;
+    transition: all ease 1s;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* .btnsContainer button {
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+
+    background-color: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    transition: all 1s ease;
+} */
+
+#decryptBtn:hover {
+    transform: scale(1.1);
+}
+
+#encryptBtn:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* 
+    FOOTER SECTION
+*/
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-section p {
+    color: #898989;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.background-linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    height: 20px;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.background-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    height: 20px;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.linkedin {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    color: #141414;
+    margin: 35px 0px 35px 0px;
+    transition: color 0.5s ease;
+}
+
+.github {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    color: #141414;
+    margin: 35px 0px 35px 0px;
+    transition: color 0.5s ease;
+}
+
+.github:hover {
+    color: #fff
+}
+
+.linkedin:hover {
+    color: #fff
+}
+
+.background-github:hover {
+    background-color: #0A3871;
+}
+
+.background-linkedin:hover {
+    background-color: #0A3871;
+}
+
+
+/*
+    TOOLTIP
+*/
+[tip] .tooltip {
+    position: fixed;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 3px;
+    background: #fff;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 5px;
+    visibility: hidden;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition:
+        opacity 0.3s,
+        visiblity 0s;
+}
+
+[tip]:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
